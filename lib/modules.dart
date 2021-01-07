@@ -239,6 +239,8 @@ class PurchasedItem {
         purchaseStateAndroid =
             _decodePurchaseStateAndroid(json['purchaseStateAndroid'] as int),
         originalJsonAndroid = json['originalJsonAndroid'] as String,
+        obfuscatedAccountId = json['obfuscatedAccountId'] as String,
+        obfuscatedProfileId = json['obfuscatedProfileId'] as String,
 
         originalTransactionDateIOS =
             _extractDate(json['originalTransactionDateIOS']),
