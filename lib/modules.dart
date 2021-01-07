@@ -217,6 +217,7 @@ class PurchasedItem {
   final String originalJsonAndroid;
   final String obfuscatedAccountId;
   final String obfuscatedProfileId;
+  final String packageName;
 
   // iOS only
   final DateTime originalTransactionDateIOS;
@@ -241,6 +242,7 @@ class PurchasedItem {
         originalJsonAndroid = json['originalJsonAndroid'] as String,
         obfuscatedAccountId = json['obfuscatedAccountId'] as String,
         obfuscatedProfileId = json['obfuscatedProfileId'] as String,
+        packageName = json['packageName'] as String,
 
         originalTransactionDateIOS =
             _extractDate(json['originalTransactionDateIOS']),

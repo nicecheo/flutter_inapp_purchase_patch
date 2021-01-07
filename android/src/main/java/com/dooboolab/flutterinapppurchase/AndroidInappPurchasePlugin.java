@@ -329,6 +329,7 @@ public class AndroidInappPurchasePlugin implements MethodCallHandler,  Applicati
             item.put("obfuscatedAccountId",purchase.getAccountIdentifiers().getObfuscatedAccountId());
             item.put("obfuscatedProfileId",purchase.getAccountIdentifiers().getObfuscatedProfileId());
 
+            item.put("packageName",purchase.getPackageName());
             if (type.equals(BillingClient.SkuType.INAPP)) {
               item.put("isAcknowledgedAndroid", purchase.isAcknowledged());
             } else if (type.equals(BillingClient.SkuType.SUBS)) {
@@ -567,6 +568,7 @@ public class AndroidInappPurchasePlugin implements MethodCallHandler,  Applicati
             item.put("orderId", purchase.getOrderId());
             item.put("obfuscatedAccountId", purchase.getAccountIdentifiers().getObfuscatedAccountId());
             item.put("obfuscatedProfileId", purchase.getAccountIdentifiers().getObfuscatedProfileId());
+            item.put("packageName",purchase.getPackageName());
 
             item.put("dataAndroid", purchase.getOriginalJson());
             item.put("signatureAndroid", purchase.getSignature());
