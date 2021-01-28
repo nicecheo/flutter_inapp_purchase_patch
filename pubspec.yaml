@@ -14,7 +14,7 @@ dependencies:
   flutter:
     sdk: flutter
 
-  platform: ^2.2.1
+#  platform: ^2.2.1
 
 dev_dependencies:
   test: '>=1.0.0 <2.0.0'
