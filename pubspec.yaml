@@ -1,8 +1,8 @@
 name: flutter_inapp_purchase
 description: A new Flutter plugin.
 version: 0.0.2
-author:
-homepage:
+author: nicecheo
+homepage: no page
 
 environment:
   sdk: ">=2.7.0 <3.0.0"
@@ -13,6 +13,7 @@ dependencies:
   meta: ^1.2.3
   flutter:
     sdk: flutter
+
 
 #  platform: ^2.2.1
 
